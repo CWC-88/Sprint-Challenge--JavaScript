@@ -7,8 +7,7 @@
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 function consume(a,b,cb){
-let cb = (a+b);
- return cb;
+  return cb(a,b);
 }
 
 /* Step 2: Create several functions to callback with consume();
@@ -24,7 +23,7 @@ function multiply(a,b){
 };
 
 function greeting(first_name,last_name){
-  "Hello ${first-name} ${last-name}, nice to meet you!"
+  return `Hello ${first_name} ${last_name}, nice to meet you!`
 };
 
 
